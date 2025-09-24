@@ -101,13 +101,13 @@ a<-ggplot(dat_all[dat_all$group %in% c('stat_nolevee', 'nonstat_nolevee'),], aes
   scale_x_continuous("Water Levels", expand = c(0, 0), limits=c(0, 1100)) + 
   scale_y_continuous("Probability Density", expand = c(0, 0)) + 
   annotate(x=580,y=0.006, geom="text",
-            label="Neglecting\nclimate change\nand uncertainty",
+            label="Neglecting\nchanging hazards\nand uncertainty",
             color="black",size=6,lineheight = .75,hjust="left")+
   annotate(x=725,y=0.004,geom="text",
-            label="Considering\nclimate change\nand uncertainty",
+            label="Considering\nchanging hazards\nand uncertainty",
             color="darkblue",size=6,lineheight = .75,hjust="left")+
   annotate(x=450,y=0.0055,geom="text",
-            label="Neglecting\nclimate change\nconsidering\nuncertainty", 
+            label="Neglecting\nchanging hazards\nconsidering\nuncertainty", 
             color="cornflowerblue",size=6,lineheight = .75,hjust="right")+
   theme_classic()+
   theme(axis.text = element_blank(),
@@ -170,7 +170,7 @@ c<-ggplot(dat_all,aes(x=dmg, group=group))+
   geom_segment(x=0.95,y=1.45,xend = 0.95,yend = 0.48,
                size=0.5,color="orangered1",arrow = arrow(angle = 15, length = unit(0.1, "inches")))+
   annotate(x=0.45,y=2.61, geom="text",
-            label="Neglecting climate change\nand levee effect", 
+            label="Neglecting changing hazards\nand levee effect", 
             hjust="left",color="orange",size=6,lineheight = .75)+
   geom_segment(x=0.37,y=3.1,xend = 0.29,yend = 3.1,
                size=0.5,color="orange",arrow = arrow(angle = 15, length = unit(0.1, "inches")))+
